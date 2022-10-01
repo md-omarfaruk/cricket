@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bat{
+            transition: transform .2s ease-in-out 0s;
+        }
+        .bat:hover{
+            transform: rotate(-60deg);
+            transform-origin: 100% 0%;
+        }
+        .ball{
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left: 185px;
+            bottom: 80px;
+            transition: transform .2s ease-in-out.2s;
+        }
+        .field {
+            width: 200px;
+        }
+        .field:hover .ball{
+            transform: translate(550px, -350px)
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">Hover on bat to play a 6 six and six</h2>
+    <div class="field">
+        <img class="bat" src="./images.jpeg" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
